@@ -11,5 +11,3 @@ Proper linkable library
 BEANS! (add link in README)
 
 ^from then on, new features as and when I need them for Beans.
-
-got me that gpg key lmaooo
