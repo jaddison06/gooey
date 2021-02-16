@@ -1,0 +1,13 @@
+the first button press takes a while to register. why????
+
+proper resizable window with dynamic resizing (based on POSITION_TYPE)
+
+RenderWindow pixel drawing & access to ren (safe?) (then update MyWidget.cpp)
+
+Canvas widget
+
+Proper linkable library
+
+BEANS! (add link in README)
+
+^from then on, new features as and when I need them for Beans.

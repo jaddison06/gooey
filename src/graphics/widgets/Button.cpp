@@ -19,9 +19,6 @@ GOOEY_STATUS_CODE Button::tick(SDL_Event *event)
     // when the mouse gets released, we're not pressed.
     // if the mouse release is also inside the button, fire the callback.
 
-    // TODO: the first press takes a while to register. why????
-    // also todo: proper resizable window with dynamic resizing (based on POSITION_TYPE)
-
     if (event->type == SDL_MOUSEBUTTONDOWN && clickInButton(event))
     {
         //printf("Button pressed\n");
