@@ -1,7 +1,7 @@
 #pragma once
 
-#include "graphics/RenderWindow.h"
-#include "graphics/Drawable.h"
+#include "src/graphics/RenderWindow.h"
+#include "src/graphics/Drawable.h"
 #include <vector>
 
 

@@ -1,13 +1,13 @@
 // Small tutorial on using Gooey.
 
 // Gooey includes
-#include "control/Gooey.h"
-#include "control/CallbackAccepter.h"
+#include "src/control/Gooey.h"
+#include "src/control/CallbackAccepter.h"
 
 // Widgets we're going to use
-#include "graphics/widgets/Button.h"
-#include "graphics/widgets/Text.h"
-#include "graphics/widgets/MyWidget.h"
+#include "src/graphics/widgets/Button.h"
+#include "src/graphics/widgets/Text.h"
+#include "src/graphics/widgets/MyWidget.h"
 
 // demo of Gooey's vast capability
 
@@ -39,7 +39,7 @@ class GooeyDemo : public CallbackAccepter
             // this is a more standard way of doing it
             gooey->addComponent(new Text(50, 50, "hello world", {255, 255, 0}));
 
-            // A button with a cross in it - for more information on custom widgets, take a look at graphics/widgets/MyWidget.cpp
+            // A button with a cross in it - for more information on custom widgets, take a look at src/graphics/widgets/MyWidget.cpp
             gooey->addComponent(new MyWidget(50, 150, {255, 0, 175}, {0, 0, 0}, "pinkButton", this));
         }
 

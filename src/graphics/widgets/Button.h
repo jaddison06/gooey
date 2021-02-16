@@ -1,7 +1,7 @@
 #pragma once
 
-#include "graphics/Drawable.h"
-#include "control/CallbackAccepter.h"
+#include "src/graphics/Drawable.h"
+#include "src/control/CallbackAccepter.h"
 
 class Button: public Drawable
 {

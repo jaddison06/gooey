@@ -1,8 +1,8 @@
 #pragma once
 
 #include <SDL2/SDL.h>
-#include "graphics/WindowManager.h"
-#include "control/CallbackAccepter.h"
+#include "src/graphics/WindowManager.h"
+#include "src/control/CallbackAccepter.h"
 #include <vector>
 #include <chrono>
 

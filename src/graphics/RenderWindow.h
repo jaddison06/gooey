@@ -6,7 +6,7 @@
 #include <SDL2/SDL_ttf.h>
 #include <vector>
 #include <array>
-#include "control/Tickable.h"
+#include "src/control/Tickable.h"
 #include <math.h>
 #include <unordered_map>
 

@@ -3,7 +3,7 @@
 // Our custom button will also change colour slightly when it's being pressed.
 
 // Let's include the header with our forward declaration
-#include "graphics/widgets/MyWidget.h"
+#include "src/graphics/widgets/MyWidget.h"
 
 // First, our constructor
 MyWidget::MyWidget(int x, int y, Col buttonCol, Col lineCol, const char *name, CallbackAccepter *parent)
@@ -12,7 +12,7 @@ MyWidget::MyWidget(int x, int y, Col buttonCol, Col lineCol, const char *name, C
     startPos = {x, y};
     endPos = {x + size, y + size}; // size was defined in the header
 
-    // store our lineCol
+    // store our colours
     this->lineCol = lineCol;
     this->buttonCol = buttonCol;
 
@@ -35,7 +35,7 @@ MyWidget::~MyWidget()
 //
 // ctx is a DrawableContext, which is a special struct that holds any
 // info we might need at tick-time. By default, it only holds a RenderWindow,
-// but you can extend it if there's something you want to dynamically pass
+// but you can add to it if there's something you want to dynamically pass
 // to some or all of your widgets.
 //
 // drawableInit is a method that would normally get called by
@@ -47,7 +47,7 @@ MyWidget::~MyWidget()
 // Luckily, Gooey provides the afterInit method. You can override it, but
 // you don't have to. It gets called after a component's drawableInit.
 //
-// If you're overriding a virtual method, remember to forward-declare it!
+// (If you're overriding a virtual method, remember to forward-declare it!)
 void MyWidget::afterInit()
 {
     button->drawableInit(ctx);
@@ -66,7 +66,6 @@ GOOEY_STATUS_CODE MyWidget::tick(SDL_Event *event)
 
     if (button->getIsPressed())
     {
-        //printf("Changing button colour!\n");
         // generate the new colour
         newCol = {
             buttonCol.r * colCoeff,

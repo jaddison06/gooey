@@ -1,4 +1,4 @@
-#include "RenderWindow.h"
+#include "src/graphics/RenderWindow.h"
 
 RenderWindow::RenderWindow(const char *title, const char *fontFile)
 {

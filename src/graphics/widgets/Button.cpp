@@ -1,4 +1,4 @@
-#include "graphics/widgets/Button.h"
+#include "src/graphics/widgets/Button.h"
 
 Button::Button(int x, int y, int w, int h, Col col, const char *name, CallbackAccepter *parent)
 {
@@ -20,10 +20,11 @@ GOOEY_STATUS_CODE Button::tick(SDL_Event *event)
     // if the mouse release is also inside the button, fire the callback.
 
     // TODO: the first press takes a while to register. why????
+    // also todo: proper resizable window with dynamic resizing (based on POSITION_TYPE)
 
     if (event->type == SDL_MOUSEBUTTONDOWN && clickInButton(event))
     {
-        printf("Button pressed\n");
+        //printf("Button pressed\n");
         isPressed = true;
     } else if (event->type == SDL_MOUSEBUTTONUP && isPressed)
     {

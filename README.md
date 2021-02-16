@@ -14,7 +14,7 @@ Gooey is based on a system of widgets (also called components). You can initiali
 
 # how do I extend gooey?
 
-Adding your own widgets is simple enough - they just need to extend Drawable, and define a tick() function. See graphics/widgets/MyWidget.cpp for more info.
+Adding your own widgets is simple enough - they just need to extend Drawable, and define a tick() function. See src/graphics/widgets/MyWidget.cpp for more info.
 
 # how do I install gooey?
 

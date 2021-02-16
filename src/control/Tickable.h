@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SDL2/SDL.h>
-#include "control/constants.h"
+#include "src/control/constants.h"
 
 class Tickable
 {

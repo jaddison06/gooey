@@ -1,4 +1,4 @@
-#include "graphics/widgets/Text.h"
+#include "src/graphics/widgets/Text.h"
 
 Text::Text(int x, int y, const char *text, Col col)
 {

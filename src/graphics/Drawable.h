@@ -1,6 +1,6 @@
 #pragma once
 
-#include "graphics/RenderWindow.h"
+#include "src/graphics/RenderWindow.h"
 #include <SDL2/SDL.h>
 
 // stuff that a Drawable might need

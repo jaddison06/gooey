@@ -18,45 +18,45 @@ build/objects/main.o: ./main.cpp
 build/objects/main-debug.o: ./main.cpp
 		g++ -c ./main.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/main-debug.o
 
-build/objects/Gooey.o: ./control/Gooey.cpp ./control/Gooey.h
-		g++ -c ./control/Gooey.cpp -I . -Wall -std=c++11 -o ./build/objects/Gooey.o
+build/objects/Gooey.o: ./src/control/Gooey.cpp ./src/control/Gooey.h
+		g++ -c ./src/control/Gooey.cpp -I . -Wall -std=c++11 -o ./build/objects/Gooey.o
 
-build/objects/Gooey-debug.o: ./control/Gooey.cpp ./control/Gooey.h
-		g++ -c ./control/Gooey.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Gooey-debug.o
+build/objects/Gooey-debug.o: ./src/control/Gooey.cpp ./src/control/Gooey.h
+		g++ -c ./src/control/Gooey.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Gooey-debug.o
 
-build/objects/WindowManager.o: ./graphics/WindowManager.cpp ./graphics/WindowManager.h
-		g++ -c ./graphics/WindowManager.cpp -I . -Wall -std=c++11 -o ./build/objects/WindowManager.o
+build/objects/WindowManager.o: ./src/graphics/WindowManager.cpp ./src/graphics/WindowManager.h
+		g++ -c ./src/graphics/WindowManager.cpp -I . -Wall -std=c++11 -o ./build/objects/WindowManager.o
 
-build/objects/WindowManager-debug.o: ./graphics/WindowManager.cpp ./graphics/WindowManager.h
-		g++ -c ./graphics/WindowManager.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/WindowManager-debug.o
+build/objects/WindowManager-debug.o: ./src/graphics/WindowManager.cpp ./src/graphics/WindowManager.h
+		g++ -c ./src/graphics/WindowManager.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/WindowManager-debug.o
 
-build/objects/RenderWindow.o: ./graphics/RenderWindow.cpp ./graphics/RenderWindow.h
-		g++ -c ./graphics/RenderWindow.cpp -I . -Wall -std=c++11 -o ./build/objects/RenderWindow.o
+build/objects/RenderWindow.o: ./src/graphics/RenderWindow.cpp ./src/graphics/RenderWindow.h
+		g++ -c ./src/graphics/RenderWindow.cpp -I . -Wall -std=c++11 -o ./build/objects/RenderWindow.o
 
-build/objects/RenderWindow-debug.o: ./graphics/RenderWindow.cpp ./graphics/RenderWindow.h
-		g++ -c ./graphics/RenderWindow.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/RenderWindow-debug.o
+build/objects/RenderWindow-debug.o: ./src/graphics/RenderWindow.cpp ./src/graphics/RenderWindow.h
+		g++ -c ./src/graphics/RenderWindow.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/RenderWindow-debug.o
 
-build/objects/Drawable.o: ./graphics/Drawable.cpp ./graphics/Drawable.h
-		g++ -c ./graphics/Drawable.cpp -I . -Wall -std=c++11 -o ./build/objects/Drawable.o
+build/objects/Drawable.o: ./src/graphics/Drawable.cpp ./src/graphics/Drawable.h
+		g++ -c ./src/graphics/Drawable.cpp -I . -Wall -std=c++11 -o ./build/objects/Drawable.o
 
-build/objects/Drawable-debug.o: ./graphics/Drawable.cpp ./graphics/Drawable.h
-		g++ -c ./graphics/Drawable.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Drawable-debug.o
+build/objects/Drawable-debug.o: ./src/graphics/Drawable.cpp ./src/graphics/Drawable.h
+		g++ -c ./src/graphics/Drawable.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Drawable-debug.o
 
-build/objects/Text.o: ./graphics/widgets/Text.cpp ./graphics/widgets/Text.h
-		g++ -c ./graphics/widgets/Text.cpp -I . -Wall -std=c++11 -o ./build/objects/Text.o
+build/objects/Text.o: ./src/graphics/widgets/Text.cpp ./src/graphics/widgets/Text.h
+		g++ -c ./src/graphics/widgets/Text.cpp -I . -Wall -std=c++11 -o ./build/objects/Text.o
 
-build/objects/Text-debug.o: ./graphics/widgets/Text.cpp ./graphics/widgets/Text.h
-		g++ -c ./graphics/widgets/Text.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Text-debug.o
+build/objects/Text-debug.o: ./src/graphics/widgets/Text.cpp ./src/graphics/widgets/Text.h
+		g++ -c ./src/graphics/widgets/Text.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Text-debug.o
 
-build/objects/MyWidget.o: ./graphics/widgets/MyWidget.cpp ./graphics/widgets/MyWidget.h
-		g++ -c ./graphics/widgets/MyWidget.cpp -I . -Wall -std=c++11 -o ./build/objects/MyWidget.o
+build/objects/MyWidget.o: ./src/graphics/widgets/MyWidget.cpp ./src/graphics/widgets/MyWidget.h
+		g++ -c ./src/graphics/widgets/MyWidget.cpp -I . -Wall -std=c++11 -o ./build/objects/MyWidget.o
 
-build/objects/MyWidget-debug.o: ./graphics/widgets/MyWidget.cpp ./graphics/widgets/MyWidget.h
-		g++ -c ./graphics/widgets/MyWidget.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/MyWidget-debug.o
+build/objects/MyWidget-debug.o: ./src/graphics/widgets/MyWidget.cpp ./src/graphics/widgets/MyWidget.h
+		g++ -c ./src/graphics/widgets/MyWidget.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/MyWidget-debug.o
 
-build/objects/Button.o: ./graphics/widgets/Button.cpp ./graphics/widgets/Button.h
-		g++ -c ./graphics/widgets/Button.cpp -I . -Wall -std=c++11 -o ./build/objects/Button.o
+build/objects/Button.o: ./src/graphics/widgets/Button.cpp ./src/graphics/widgets/Button.h
+		g++ -c ./src/graphics/widgets/Button.cpp -I . -Wall -std=c++11 -o ./build/objects/Button.o
 
-build/objects/Button-debug.o: ./graphics/widgets/Button.cpp ./graphics/widgets/Button.h
-		g++ -c ./graphics/widgets/Button.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Button-debug.o
+build/objects/Button-debug.o: ./src/graphics/widgets/Button.cpp ./src/graphics/widgets/Button.h
+		g++ -c ./src/graphics/widgets/Button.cpp -I . -Wall -std=c++11 -g -O0 -o ./build/objects/Button-debug.o
 

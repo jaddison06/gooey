@@ -1,4 +1,4 @@
-#include "graphics/WindowManager.h"
+#include "src/graphics/WindowManager.h"
 
 WindowManager::WindowManager(const char *title, const char *fontFile)
 {

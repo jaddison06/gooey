@@ -1,4 +1,4 @@
-#include "Gooey.h"
+#include "src/control/Gooey.h"
 
 Gooey::Gooey(const char *title, const char *fontFile, CallbackAccepter *parent)
 {

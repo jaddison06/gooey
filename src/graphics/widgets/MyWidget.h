@@ -1,12 +1,12 @@
 #pragma once
 
-// Forward declarations for MyWidget - for more information on custom widgets, take a look at graphics/widgets/MyWidget.cpp
+// Forward declarations for MyWidget - for more information on custom widgets, take a look at src/graphics/widgets/MyWidget.cpp
 
 // standard stuff
-#include "graphics/Drawable.h"
-#include "control/CallbackAccepter.h"
+#include "src/graphics/Drawable.h"
+#include "src/control/CallbackAccepter.h"
 
-#include "graphics/widgets/Button.h"
+#include "src/graphics/widgets/Button.h"
 
 class MyWidget: public Drawable
 {
